@@ -152,8 +152,7 @@ def adding_to_DB(new_line_to_DB):
     menu()
 
 
-if not os.path.isfile("regex_tester_DB.txt") in os.listdir():
+if not os.path.exists("regex_tester_DB.txt"):
     file = open("regex_tester_DB.txt", "w")
     file.close()
-    
 menu()
